@@ -1,7 +1,7 @@
 import React from 'react';
 import DiceRoller from './play/diceRoller';
 import CombatTracker from './play/combatTracker';
-import NPCGenerator from './play/npcGenerator';;
+import NPCGenerator from './play/npcGenerator';
 
 class Play extends React.Component {
 	constructor(props) {

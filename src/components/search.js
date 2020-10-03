@@ -14,7 +14,8 @@ const uuidv4 = require('uuid/v4');
 
 const mapStateToProps = state => {
 	return {
-		reference: state.reference
+		reference: state.reference,
+		customMonsters: state.customMonsters
 	}
 }
 
@@ -36,23 +37,20 @@ class SearchForm extends React.Component {
 	};
 
 	updateVisible = (type, searchQuery) => {
-		let list = [...this.state[type]].map((el, id) => ({...el, id: id}));;
+		let list = [...this.state[type]];
 		const top = [];
 		const bottom = [];
-		console.log(searchQuery)
+
+
 		list.forEach(e => {
 			if( e.name.toLowerCase().startsWith(searchQuery.toLowerCase())){
-				console.log('Passed');
 				top.push(e);
-			} else {
+			}else if(e.name.toLowerCase().includes(searchQuery.toLowerCase())){
 				bottom.push(e);
 			}
 		});
 
-		list = [...top, ...bottom.filter(el => {
-			const textMatch = el.name.toLowerCase().includes(searchQuery.toLowerCase());
-			return textMatch;
-		})]
+		list = [...top, ...bottom];
 
 		switch(type) {
 			case 'monsters': 
@@ -72,10 +70,8 @@ class SearchForm extends React.Component {
 			break;
 			default: 
 				return null;
-		}
-		
-		
-		
+		}	
+
 	};
 
 	handleTextChange = (e) => {
@@ -95,7 +91,6 @@ class SearchForm extends React.Component {
 				return undefined;
 		}
 	};
-
 	typeToMonster = (e) => {
 		this.setState({searchType: MONSTER});
 	};
@@ -108,17 +103,19 @@ class SearchForm extends React.Component {
 
 	handleResultClick = (e) => {
 		e.stopPropagation();
+		const index = e.target.dataset.index;
+		console.log(index);
 		switch (this.state.searchType) {
 			case MONSTER:
-				this.setState({selectedMonster: this.state.monsters[e.target.id]},
+				this.setState({selectedMonster: this.state.visibleMonsters[index]},
 					() => {this.props.updateReference(this.state)});
 				break;
 			case SPELL:
-				this.setState({selectedSpell: this.state.spells[e.target.id]},
+				this.setState({selectedSpell: this.state.visibleSpells[index]},
 					() => {this.props.updateReference(this.state)});
 				break;
 			case MAGIC_ITEM:
-				this.setState({selectedMagicItem: this.state.magicItems[e.target.id]},
+				this.setState({selectedMagicItem: this.state.visibleMagicItems[index]},
 					() => {this.props.updateReference(this.state)});
 				break;
 			default:
@@ -157,38 +154,30 @@ class SearchForm extends React.Component {
 						className="search__head__query"
 						value={this.state.searchQuery}
 						onChange={this.handleTextChange}
+						autofocus
 						/>
 					</div>
-					<div className="search__results">
+					<div className="search__results" onClick={this.handleResultClick}>
 					{ this.state.searchType === MONSTER 
-						&& this.state.visibleMonsters.map((monster, i) => {
-									return (
-										<MonsterSearchResult 
-										key={i} id={monster.id}
-										handleResultClick={this.handleResultClick}
-										{...monster}/>
-									)
-								})
+						&& this.state.visibleMonsters.map((monster, i) => 
+						<MonsterSearchResult 
+						key={i} index={i}
+						{...monster}/>
+					)
 					}
-					{this.state.searchType === SPELL 
-						&& this.state.visibleSpells.map((spell, i) => {
-									return (
-										<SpellSearchResult
-										key={i} id={spell.id}
-										handleResultClick={this.handleResultClick}
-										{...spell}/>
-									)
-								})
+					{ this.state.searchType === SPELL 
+						&& this.state.visibleSpells.map((spell, i) => 
+								<SpellSearchResult
+								key={i} index={i}
+								{...spell}/>
+							)
 					}
 					{this.state.searchType === MAGIC_ITEM 
-						&& this.state.visibleMagicItems.map((item, i) => {
-									return (
-										<MagicItemSearchResult
-										key={i} id={item.id}
-										handleResultClick={this.handleResultClick}
-										{...item}/>
-									)
-								})
+						&& this.state.visibleMagicItems.map((item, i) => 
+						<MagicItemSearchResult
+						key={i} index={i}
+						{...item}/>
+					)
 					}
 					</div>
 				</div>
