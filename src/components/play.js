@@ -1,6 +1,6 @@
 import React from 'react';
 import DiceRoller from './play/diceRoller'
-import MonsterTracker from './play/monsterTracker'
+import CombatTracker from './play/combatTracker'
 
 
 class Play extends React.Component {
@@ -12,14 +12,15 @@ class Play extends React.Component {
 	}
 
 	handleActiveChange = e =>  {
-		const newPlay = e.target.dataset.play
+		const newPlay = e.target.dataset.play;
+		this.setState({activePlay: newPlay});
 	}
 
 	render() {
 		return (
 			<div>
 				{this.state.activePlay === "TRACKER" &&
-				<MonsterTracker />
+				<CombatTracker />
 				}
 				<DiceRoller />
 			</div>

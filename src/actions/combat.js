@@ -1,6 +1,6 @@
-const uuidv4 = require('uuid/v4');
+
+
 export const addCombatEntity = (entity) => {
-	entity.uid = uuidv4();
 	entity.hp = entity.hit_points; 
 	return ({
 		type: 'ADD_COMBAT_ENTITY',
@@ -15,9 +15,16 @@ export const removeCombatEntity = (uid) => {
 	});
 }
 
-export const updateCombatEntity= (uid, entity) => {
+export const updateCombatEntity = (uid, entity) => {
 	return ({
 		type: 'UPDATE_COMBAT_ENTITY',
 		uid, entity
 	})
-} 
+}
+export const updateAllEntities = (entityList) => {
+	return ({
+		type: "UPDATE_ALL_ENTITIES",
+		entityList
+	})
+	
+}
