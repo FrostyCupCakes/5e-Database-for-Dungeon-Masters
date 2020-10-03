@@ -1,4 +1,5 @@
 import React from 'react';
+
 export const MonsterSearchResult = (props) => (
 	<div className="search__results__result" id={props.id} onClickCapture={props.handleResultClick}>
 		<h3 id={props.id}>{props.name}</h3>
@@ -104,6 +105,7 @@ export const MonsterResultCard = (props) => (
 					</div> 
 			  		))
 			  }
+			<button onClick={props.add}>Add to combat</button>
 			</div> 
 			<div className="section-right">
 				{

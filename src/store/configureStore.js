@@ -4,6 +4,7 @@ import monsterCreateReducer from '../reducers/monsterCreate';
 // import playersReducer from '../reducers/players';
 import rollsReducer from '../reducers/rolls';
 import referenceReducer from '../reducers/reference';
+import combatEntitiesReducer from '../reducers/combatEntities';
 
 export default () => {
   const store = createStore(
@@ -11,7 +12,8 @@ export default () => {
     	monsters: monstersReducer,
     	monsterCreate: monsterCreateReducer,
     	// players: playersReducer,
-    	reference: referenceReducer,
+      reference: referenceReducer,
+      combatEntities: combatEntitiesReducer,
     	rolls: rollsReducer
     }),
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
