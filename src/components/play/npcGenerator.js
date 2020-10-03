@@ -2,26 +2,26 @@ import React from 'react';
 import {connect} from 'react-redux';
 const npc = require('../../data/npc.json');
 const names = require('../../data/names.json');
-
 const pickRandRecrsive = list => {
-	if(typeof list === 'array'){
+	let type = typeof list;
+	if(type === 'array'){
 		const r = Math.floor(Math.random() * list.length);
-		const type = typeof list[r];
+		type = typeof list[r];
 		if(type === 'string') {
 			return list[r];
 		}else if(type === 'object' || type === 'array'){
 			return pickRandRecrsive(list[r]);
 		}
 
-	}else if (typeof list === 'object') {
+	}else if (type === 'object') {
 		const keys = Object.keys(list);
 		const r = Math.floor(Math.random() * keys.length);
 		const val = list[keys[r]];
-		const type = typeof val;
+		type = typeof val;
 		if (type === 'string') return val;
 		else if (type === 'object' || type === 'array') return pickRandRecrsive(val);
 	}else{
-		console.error('Improper type passed to pickRandRecrsive')
+		console.error('Improper type passed to pickRandRecursive')
 	}
 }
 
@@ -53,12 +53,11 @@ class NPCGenerator extends React.Component {
 				<br></br>
 			{this.state.name && 
 				<div className="NPCGenerator__Card stat-block">
-					<h2>{this.state.name}</h2>
-					<p>A{
-						// ['a','e','i','o','u', 'h'].reduce((cond,v)=>{
-						// 	if(this.state.interaction_trait[0] === v) cond = true;}, false)
-						// && 'n'
-					} {this.state.interaction_trait} person.</p>
+					<h1>{this.state.name}</h1>
+					<svg height="5" width="100%" className="tapered-rule">
+			    	<polyline points="0,0 400,2.5 0,5"></polyline>
+			    	</svg>
+					<p>A {this.state.interaction_trait} person.</p>
 					<p> With {this.state.appearance}</p>
 					<p>{this.state.high_ability} but {this.state.low_ability}</p>
 					<p>{this.state.talent}</p>
