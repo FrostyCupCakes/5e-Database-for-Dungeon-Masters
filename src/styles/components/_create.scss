@@ -135,7 +135,7 @@
 	background: darken($light-background, 40%);
 	cursor: pointer;
 }
-.racePage {
+.createPage {
 	display: flex;
 }
 .races{
@@ -162,20 +162,15 @@
 	}
 }
 .races__raceCard--preview:hover {
-	box-shadow: 0 0 2.5em darken(#867453, 30%);
+	box-shadow: 0 0 2.5em darken($paper, 30%);
 	cursor: pointer;
 }
 .races__raceCard__icon {
 	width: 6rem;
-	display: inline-block;
-	float: right;
 	margin-right: 2rem;
 	filter: invert(80%);
 }
-.classes {
-	display: flex;
-}
-.classes__col {
+.create__col {
 	display: flex;
 	flex-direction: column;
 }
@@ -184,7 +179,7 @@
 	margin:  .5rem 2rem;
 	display: inline-block;
 	min-width: 10%;
-	background: #FDF1DC;
+	background: $paper;
 	padding: 5px 10px 20px;
 	box-shadow: 0 0 .8em #867453;
 	h2 {
@@ -195,7 +190,7 @@
 }
 
 .classCard:hover {
-	box-shadow: 0 0 2.5em darken(#867453, 30%);
+	box-shadow: 0 0 2.5em darken($paper, 30%);
 	cursor: pointer;
 }
 
@@ -205,3 +200,37 @@
 	float: right;
 
 } 
+
+.levelTable {
+	background: $paper;
+} 
+
+.paperCard {
+	background: $paper;
+	padding: 5px 10px 20px;
+	box-shadow: 0 0 .8em #867453;
+}
+.formListCard {
+	display: flex;
+	background: $background;
+	width: 40rem;
+	flex-wrap: wrap;
+}
+
+.formListCard__item {
+	background: red;
+	color: white;
+	margin: $m-size;
+	padding: $s-size $l-size;
+}
+.formListCard__item--active {
+	background: blue;
+	box-shadow: 0 0 .8em #867453;
+}
+
+.formMultipleOptionsCard {
+	display: flex;
+	background: $background;
+	width: 40rem;
+	flex-wrap: wrap;
+}

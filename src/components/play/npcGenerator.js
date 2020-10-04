@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 const npc = require('../../data/npc.json');
 const names = require('../../data/names.json');
+
 const pickRandRecrsive = list => {
 	let type = typeof list;
 	if(type === 'array'){

@@ -104,7 +104,7 @@ class SearchForm extends React.Component {
 	};
 
 	handleResultClick = (e) => {
-		e.stopPropagation();
+		//e.stopPropagation();
 		const index = e.target.dataset.index;
 		console.log(index);
 		switch (this.state.searchType) {
@@ -137,18 +137,21 @@ class SearchForm extends React.Component {
 					<div className="search__head">
 						<div className="search__head__types">
 							<div className=
-							{this.state.searchType === MONSTER ?
+							{this.state.searchType === MONSTER ? 
 								"search__head__types--active" : ''}
-							onClick={this.typeToMonster}
-							>Monsters</div>
+							  onClick={this.typeToMonster}
+							  >Monsters
+							</div>
 							<div className=
-							{this.state.searchType === SPELL ?
+							{this.state.searchType === SPELL ? 
 								"search__head__types--active" : ''}
-							onClick={this.typeToSpell}>Spells</div>
+							  onClick={this.typeToSpell}>Spells
+							</div>
 							<div className=
-							{this.state.searchType === MAGIC_ITEM ?
+							{this.state.searchType === MAGIC_ITEM ? 
 								"search__head__types--active": ''}
-							onClick={this.typeToMagicItem}>Items</div>
+							  onClick={this.typeToMagicItem}>Items
+							</div>
 						</div>
 						<input 
 						type="text"
@@ -156,7 +159,7 @@ class SearchForm extends React.Component {
 						className="search__head__query"
 						value={this.state.searchQuery}
 						onChange={this.handleTextChange}
-						autofocus
+						autoFocus
 						/>
 					</div>
 					<div className="search__results" onClick={this.handleResultClick}>
