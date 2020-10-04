@@ -6,17 +6,20 @@ class ChooseSkillsAndEquipment extends React.Component {
     constructor (props) {
         super(props);
         this.state = {
-            classChosen: 'Barbarian'
+            classChosen: 'Bard'
         }
     };
     handleSkills = (list) => {
+        console.log(list);
+    }
+    handleEquipment = list => {
         console.log(list);
     }
     render() {
         return (
         <div className="createPage">
             <div className="create__col">
-                <button onClick={this.props.handleNext}>Back</button>
+            <button onClick={this.props.handleBack}>Back</button>
             </div>
             <div className="create__col">
                 <FormListSelect 
@@ -28,6 +31,7 @@ class ChooseSkillsAndEquipment extends React.Component {
             <div className="create__col">
                 <FormMultipleOptions 
                 list={classes[this.state.classChosen]["Equipment"]["options"]}
+                updateSelected={this.handleEquipment}
                 />
             </div>
         </div>)
