@@ -6,7 +6,7 @@ This was created as a Stackathon project for [Fullstack Academy](https://www.ful
 
 Database for Dungeon Masters 5e
 ========
-Database for Dungeon Masters 5e is an Electron application that runs as a window locally on your machine and helps you, the Dungeon Master, manage your role playing sessions by removing a lot of the encumberments that come with pen traditional pen and paper approaches. 
+Database for Dungeon Masters 5e is an application that runs as a window locally on your machine and helps you, the Dungeon Master, manage your role playing sessions by removing a lot of the encumberments that come with pen traditional pen and paper approaches. 
 
 ## Overview
  * <strong>Reference</strong> 
