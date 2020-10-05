@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 You can find the most recent version of this guide [here](https://github.com/facebook/create-react-app/blob/master/packages/cra-template/template/README.md).
 
-This was created as a Stackathon project for [Fullstack Academy](https://www.fullstackacademy.com/)
+This was created as a Stackathon project for [Fullstack Academy](https://www.fullstackacademy.com/).
 
 Database for Dungeon Masters 5e
 ========
