@@ -6,11 +6,11 @@ This was created as a Stackathon project for [Fullstack Academy](https://www.ful
 
 Database for Dungeon Masters 5e
 ========
-Database for Dungeon Masters 5e is an electron application that runs as a window locally on your machine and helps you, the Dungeon Master, manage your role playing sessions by removing a lot of the encumberments that come with pen traditional pen and paper approaches. 
+Database for Dungeon Masters 5e is an Electron application that runs as a window locally on your machine and helps you, the Dungeon Master, manage your role playing sessions by removing a lot of the encumberments that come with pen traditional pen and paper approaches. 
 
 ## Overview
  * <strong>Reference</strong> 
-5e Database for Dungeon Masters has access to the 5e Systems Reference Document (SRD) data provided by Wizards of the Coast with the Open Game License (OGL). The app allows you to search through all the standard 5e monsters, spells, and magic items so you don't have to thumb through the rule books in the middle of a session.
+Database for Dungeon Masters 5e has access to the 5e Systems Reference Document (SRD) data provided by Wizards of the Coast with the Open Game License (OGL). The app allows you to search through all the standard 5e monsters, spells, and magic items so you don't have to thumb through the rule books in the middle of a session.
  * <strong>Create</strong>
 Dungeons and Dragons has a great active community that enjoys writing original content that is compatible with the base rules. Database for Dungeon Masters 5e allows you to import your original content into the app with a built in creation feature. All of your content can be saved locally and used in the application alongside the standard 5e content.   
  * <strong>Play</strong>
