@@ -100,7 +100,7 @@ export const MonsterResultCard = (props) => (
 					<div className="property-block" key={i}>
 						<h4>{ability.name}. </h4>
 						<p>{ability.desc}</p>
-						{ability.attack_bonus != 0 &&
+						{ability.attack_bonus !== 0 &&
 						<p>Attack Bonus: {ability.attack_bonus}</p>}
 					</div> 
 			  		))

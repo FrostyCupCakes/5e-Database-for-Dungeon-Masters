@@ -1,19 +1,19 @@
 .navs {
     display: flex;
     justify-content: center;
-  }
+}
   
-  .nav {
-    padding: $s-size $l-size;
-    text-align: center;
-    font-size: $m-size;
-    text-decoration: none;
-    color: white;
-  }
+.nav {
+  padding: $s-size $l-size;
+  text-align: center;
+  font-size: $m-size;
+  text-decoration: none;
+  color: white;
+}
   
-  .nav:hover {
-    background: lighten($background, 10%);
-    color: $light-text;
-    cursor: pointer;
-  }
+.nav:hover {
+  background: lighten($background, 10%);
+  color: $light-text;
+  cursor: pointer;
+}
   

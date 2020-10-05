@@ -32,7 +32,7 @@ const MonsterList = (props) => (
 			)
 		}
 	</div>
-	)
+)
 
 class CreateMonsterForm extends React.Component {
 	constructor(props) {
@@ -101,8 +101,8 @@ class CreateMonsterForm extends React.Component {
 	render() {
 		return (
 			<div className="createMonsterForm form">	
-    				<FormName name={this.state.name} handleName={this.handleName}/>
-    				<AbilityScores 
+    			<FormName name={this.state.name} handleName={this.handleName}/>
+    			<AbilityScores 
     				strength={this.state.strength}
     				dexterity={this.state.dexterity} 
     				constitution={this.state.constitution} 
@@ -110,29 +110,29 @@ class CreateMonsterForm extends React.Component {
     				wisdom={this.state.wisdom} 
     				charisma={this.state.charisma}  
     				handleAbilityScores={this.handleAbilityScores}/>
-    				<div className="form__row">
-    					<AlignmentChart curAlignment={this.state.alignment} handleAlignment={this.handleAlignment}/>
-    					<div className="form__col">
-    						<h2>Armor Class</h2>
-    						<input type="number" 
-    						size="2" value={this.state.armor_class || 10}
-    						onChange={this.handleArmorClass}
-    						></input>
+    			<div className="form__row">
+    				<AlignmentChart curAlignment={this.state.alignment} handleAlignment={this.handleAlignment}/>
+    				<div className="form__col">
+    					<h2>Armor Class</h2>
+    					<input type="number" 
+    					size="2" value={this.state.armor_class || 10}
+    					onChange={this.handleArmorClass}
+    					></input>
     						<h2>Size</h2>
     						<FormSize scale={1} size={this.state.size || ''}handleSize={this.handleSize}/>
 							<h2>Type</h2>
 							<FormMonsterType type={this.state.type || ''} handleType={this.handleType}/>
 							<h2>Challenge Rating</h2>
-    				<input onChange={this.handleRating} value={this.state.challenge_rating}type="number" max="30" min="0"></input>
-    					</div>
-    					<Actions handleActions={this.handleActions}/>
+    					<input onChange={this.handleRating} value={this.state.challenge_rating}type="number" max="30" min="0"></input>
     				</div>
-					<MonsterList monsters={this.props.customMonsters}/>
-    				<div className="form__row">
-    					<button className="createSubmit" onClick={this.handleSubmit}>Create Monster</button>
-    				</div>
-
-			</div>)
+    				<Actions handleActions={this.handleActions}/>
+    			</div>
+				<MonsterList monsters={this.props.customMonsters}/>
+    			<div className="form__row">
+    				<button className="createSubmit" onClick={this.handleSubmit}>Create Monster</button>
+    			</div>
+			</div>
+		)
 	}
 } 
 

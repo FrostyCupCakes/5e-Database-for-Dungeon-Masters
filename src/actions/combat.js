@@ -1,5 +1,3 @@
-
-
 export const addCombatEntity = (entity) => {
 	entity.hp = entity.hit_points; 
 	return ({
@@ -7,14 +5,12 @@ export const addCombatEntity = (entity) => {
 		entity
 	});
 }
-
 export const removeCombatEntity = (uid) => {
 	return ({
 		type: 'REMOVE_COMBAT_ENTITY',
 		uid
 	});
 }
-
 export const updateCombatEntity = (uid, entity) => {
 	return ({
 		type: 'UPDATE_COMBAT_ENTITY',
@@ -25,6 +21,5 @@ export const updateAllEntities = (entityList) => {
 	return ({
 		type: "UPDATE_ALL_ENTITIES",
 		entityList
-	})
-	
+	})	
 }

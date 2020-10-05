@@ -41,42 +41,41 @@ const RacePreview = props => (
 )
 
 const RaceCard = props => {
-	const contentLeft = [], contentRight = [];
-		props.content.forEach((content, i, r) => {
-			if(i < r.length / 2) contentLeft.push(content);
-			else contentRight.push(content);
-		});
-		return (
-			<div className="races__raceCard stat-block wide races__raceCard--full">
-				<div className="section-left">
-					<h1>{props.name}</h1>
-					<img
-					className="races__raceCard__icon"
-					src={"./media/" + props.name + '.svg'}
-					alt="Race Icon"
-					/>
-					{contentLeft.map((content, i) => {
-						return (
-						<div key={i}>
-							<h3>{content.title}</h3>
-
-							<p>{content.description}</p>
+const contentLeft = [], contentRight = [];
+	props.content.forEach((content, i, r) => {
+		if(i < r.length / 2) contentLeft.push(content);
+		else contentRight.push(content);
+	});
+	return (
+		<div className="races__raceCard stat-block wide races__raceCard--full">
+			<div className="section-left">
+				<h1>{props.name}</h1>
+				<img
+				className="races__raceCard__icon"
+				src={"./media/" + props.name + '.svg'}
+				alt="Race Icon"
+				/>
+				{contentLeft.map((content, i) => {
+					return (
+					<div key={i}>
+						<h3>{content.title}</h3>
+						<p>{content.description}</p>
 						</div>
-						)
-					})}
-				</div>
-				<div className="section-right">
-					{contentRight.map((content, i) => {
-						return (
-						<div key={i}>
-							<h3>{content.title}</h3>
-							<p>{content.description}</p>
-						</div>
-						)
-					})}
-				</div>
+					)
+				})}
 			</div>
-		)
+		<div className="section-right">
+			{contentRight.map((content, i) => {
+				return (
+					<div key={i}>
+						<h3>{content.title}</h3>
+						<p>{content.description}</p>
+					</div>
+				)
+			})}
+		</div>
+	</div>
+	)
 }
 
 class ChooseRace extends React.Component {
@@ -109,7 +108,6 @@ class ChooseRace extends React.Component {
 				</div>
 			</div>
 		</div>
-		
 		)
 	}
 }

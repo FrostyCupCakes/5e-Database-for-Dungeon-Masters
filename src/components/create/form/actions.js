@@ -5,7 +5,7 @@ const ActionPrompt = (props) => (
 		<input type="text" placeholder="Action Name" value={props.name} onChange={props.handleActionName}/>
 		<input type="textArea" placeholder="Action Description" value={props.desc} onChange={props.handleActionDescription}/>
 	</div>
-	)
+)
 
 export default class Actions extends React.Component {
 	constructor(props) {

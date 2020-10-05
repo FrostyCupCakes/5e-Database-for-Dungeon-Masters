@@ -13,13 +13,13 @@ const History = (props) => (
 	<div className="diceRoller__history">
 		{props.rolls.map((r, i) => <p key={i}>{r}</p>)}
 	</div>
-	)
+)
 
 const DieRow = ({die, handleRoll}) => (
 	<div className="diceRoller__buttons__button">
 		<button onClick={handleRoll} data-die={die}>d{die}</button>
 	</div>
-	)
+)
 
 class DiceRoller extends React.Component {
 	constructor(props){

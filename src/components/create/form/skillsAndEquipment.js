@@ -39,4 +39,5 @@ class ChooseSkillsAndEquipment extends React.Component {
     }
 
 }
+
 export default ChooseSkillsAndEquipment; 

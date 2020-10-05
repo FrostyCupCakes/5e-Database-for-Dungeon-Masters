@@ -8,7 +8,7 @@ class CreateItemForm extends React.Component {
 	render() {
 		return (
 			<div>Create Item!</div>
-			)
+		)
 	}
 }
 

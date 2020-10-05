@@ -72,7 +72,7 @@ class NPCGenerator extends React.Component {
 			</div>
 			}
 		</div>
-			);
+		);
 	}
 }
 

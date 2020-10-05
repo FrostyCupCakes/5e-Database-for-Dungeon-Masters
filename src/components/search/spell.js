@@ -1,10 +1,11 @@
 import React from 'react';
+
 export const SpellSearchResult = (props) => (
 	<div className="search__results__result" data-index={props.index}>
 		<h3 data-index={props.index}>{props.name}</h3>
 		<p data-index={props.index}>{props.level} {props.school}</p>
 	</div>
-	)
+)
 
 export const SpellResultCard = (props) => (
 	<div id="resultCard">
@@ -37,5 +38,5 @@ export const SpellResultCard = (props) => (
 				</div>
 		</div>
 	</div>
-    ) 
+) 
     

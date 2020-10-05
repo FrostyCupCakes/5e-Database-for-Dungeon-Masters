@@ -3,4 +3,5 @@ export const updateReference = reference => {
 		type: 'UPDATE_REFERENCE',
 		reference
 	});
-} 
+}
+ 

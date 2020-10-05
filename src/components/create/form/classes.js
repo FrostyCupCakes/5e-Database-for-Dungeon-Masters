@@ -15,20 +15,20 @@ const LevelTable = props => {
 					)}
 				</tr>
 				{
-					props[tableHeads[0]].map((e, i) => 
-						<tr key={i}>
-							{tableHeads.map((t, x) => 
-								<td key={x}>
-									{props[t][i]}
-								</td>
-							)}
-						</tr>
-					)
+				props[tableHeads[0]].map((e, i) => 
+					<tr key={i}>
+						{tableHeads.map((t, x) => 
+							<td key={x}>
+								{props[t][i]}
+							</td>
+						)}
+					</tr>
+				)
 				}
 				</tbody>
 			</table>
 		</div>
-		)
+	)
 }
 
 const ClassCardPreview = props => (

@@ -11,7 +11,7 @@ class Generators extends React.Component {
                 <BuildingGenerator />
             </div>
         </div>
-    )
+        )
     }
 }
 

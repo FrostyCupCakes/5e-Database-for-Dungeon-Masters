@@ -47,20 +47,20 @@ class AbilityScores extends React.Component {
 			<AbilityScore handleIncDec={this.handleIncDec} value={this.state.charisma} ability="Charisma"/>
 		</div>
 
-	)
+		)
 	}
 }
 
 
 const AbilityScore = (props) => (
 	<div className="form__container">
-			<div className="form__ability_score">
-				<h3>{props.ability}</h3>
-				<button data-type="DEC" data-ability={props.ability} onClick={props.handleIncDec}>-</button>
-				<h2>{props.value}</h2>
-				<button data-type="INC" data-ability={props.ability} onClick={props.handleIncDec}>+</button>
-			</div>
+		<div className="form__ability_score">
+			<h3>{props.ability}</h3>
+			<button data-type="DEC" data-ability={props.ability} onClick={props.handleIncDec}>-</button>
+			<h2>{props.value}</h2>
+			<button data-type="INC" data-ability={props.ability} onClick={props.handleIncDec}>+</button>
 		</div>
+	</div>
 
-	)
+)
 export default AbilityScores

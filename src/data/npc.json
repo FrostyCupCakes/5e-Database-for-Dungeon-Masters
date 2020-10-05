@@ -80,139 +80,139 @@
 			  "boring"
 			]
 		  }
-		  }
-		},
-		"talents": [
-		  "Plays a musical instrument",
-		  "Speaks several languages fluently",
-		  "Unbelievably lucky",
-		  "Perfect memory",
-		  "Great with animals",
-		  "Great with children",
-		  "Great at solving puzzles",
-		  "Great at one game",
-		  "Great at impersonations",
-		  "Draws beautifully",
-		  "Paints beautifully",
-		  "Sings beautifully",
-		  "Drinks everyone under the table",
-		  "Expert carpenter",
-		  "Expert cook",
-		  "Expert dart thrower and rock skipper",
-		  "Expert juggler",
-		  "Skilled actor and master of disguise",
-		  "Skilled dancer",
-		  "Knows theive's cant"
-		],
-		"interaction_traits": [
-		  "argumentative",
-		  "arrogant",
-		  "blustering",
-		  "rude",
-		  "curious",
-		  "friendly",
-		  "honest",
-		  "hot tempered",
-		  "irritable",
-		  "ponderous",
-		  "quiet",
-		  "suspicous"
-		  ],
-		"mannerisms":[
-		  "Prone to singing, whistling, or humming quietly",
-		  "Speaks in rhyme or some peculiar way",
-		  "Particularly low or high voice",
-		  "Slurs words, lisps, or stutters",
-		  "Enunciates overly clearly",
-		  "Speaks loudly",
-		  "Whispers",
-		  "Uses flowery speech or long words",
-		  "Frequently uses the wrong word",
-		  "Uses colorful oaths and exclamations",
-		  "Makes constant jokes or puns",
-		  "Prone to predictions of doom",
-		  "Fidgets",
-		  "Squints",
-		  "Stares into the distance",
-		  "Chews something",
-		  "Paces",
-		  "Taps fingers",
-		  "Bites fingernails",
-		  "Twirls hair or tugs beard"
-		  ],
-		"ideals": {
-		  "good": [
+		}
+	},
+	"talents": [
+		"Plays a musical instrument",
+		"Speaks several languages fluently",
+		"Unbelievably lucky",
+		"Perfect memory",
+		"Great with animals",
+		"Great with children",
+		"Great at solving puzzles",
+		"Great at one game",
+		"Great at impersonations",
+		"Draws beautifully",
+		"Paints beautifully",
+		"Sings beautifully",
+		"Drinks everyone under the table",
+		"Expert carpenter",
+		"Expert cook",
+		"Expert dart thrower and rock skipper",
+		"Expert juggler",
+		"Skilled actor and master of disguise",
+		"Skilled dancer",
+		"Knows theive's cant"
+	],
+	"interaction_traits": [
+		"argumentative",
+		"arrogant",
+		"blustering",
+		"rude",
+		"curious",
+		"friendly",
+		"honest",
+		"hot tempered",
+		"irritable",
+		"ponderous",
+		"quiet",
+		"suspicous"
+	],
+	"mannerisms":[
+		"Prone to singing, whistling, or humming quietly",
+		"Speaks in rhyme or some peculiar way",
+		"Particularly low or high voice",
+		"Slurs words, lisps, or stutters",
+		"Enunciates overly clearly",
+		"Speaks loudly",
+		"Whispers",
+		"Uses flowery speech or long words",
+		"Frequently uses the wrong word",
+		"Uses colorful oaths and exclamations",
+		"Makes constant jokes or puns",
+		"Prone to predictions of doom",
+		"Fidgets",
+		"Squints",
+		"Stares into the distance",
+		"Chews something",
+		"Paces",
+		"Taps fingers",
+		"Bites fingernails",
+		"Twirls hair or tugs beard"
+	],
+	"ideals": {
+		"good": [
 			"Beauty",
 			"Charity",
 			"Greater good",
 			"Life",
 			"Respect",
 			"Self sacrifice"
-			],
-		  "evil": [
+		],
+		"evil": [
 			"Domination",
 			"Greed",
 			"Might",
 			"Pain",
 			"Retribution",
 			"Slaughter"
-			],
-		  "lawful":[
+		],
+		"lawful":[
 			"Community",
 			"Fairness",
 			"Honor",
 			"Logic",
 			"Responsibility",
 			"Tradition"
-			],
-		  "chaotic":[
+		],
+		"chaotic":[
 			"Change",
 			"Creativity",
 			"Freedom",
 			"Independence",
 			"No limits",
 			"Whimsy"
-			],
-		  "neutral":[
+		],
+		"neutral":[
 			"Balance",
 			"Knowledge",
 			"Live andlet live",
 			"Moderation",
 			"Neutrality",
 			"People"
-			],
-		  "other_ideals":[
+		],
+		"other_ideals":[
 			"Aspiration",
 			"Discovery",
 			"Glory",
 			"Nation",
 			"Redemption",
 			"Self-knowledge"
-			]
-		},
-		"bonds":[
-		  "dedicated to fulfilling a personal life goal",
-		  "protective of close family members",
-		  "protective of colleagues or compatriots",
-		  "loyal to a benefactor, patron, or employer",
-		  "captivated by a romantic interest",
-		  "drawn to a special place",
-		  "protective of a sentimental keepsake",
-		  "protective of a valuable possession",
-		  "out for revenge"
-		],
-		"flaws_and_secrets" : [
-		  "forbidden love or susceptibility to romance",
-		  "enjoys decadent pleasures",
-		  "arrogance",
-		  "envies another creature's possessions or station",
-		  "overpowering greed",
-		  "prone to rage",
-		  "has a powerful enemy",
-		  "specific phobia",
-		  "shameful or scandalous history",
-		  "secret Crime or misdeed",
-		  "possession of forbidden lore",
-		  "foolhardy bravery"
 		]
-} 
+	},
+	"bonds":[
+		"dedicated to fulfilling a personal life goal",
+		"protective of close family members",
+		"protective of colleagues or compatriots",
+		"loyal to a benefactor, patron, or employer",
+		"captivated by a romantic interest",
+		"drawn to a special place",
+		"protective of a sentimental keepsake",
+		"protective of a valuable possession",
+		"out for revenge"
+	],
+	"flaws_and_secrets" : [
+		"forbidden love or susceptibility to romance",
+		"enjoys decadent pleasures",
+		"arrogance",
+		"envies another creature's possessions or station",
+		"overpowering greed",
+		"prone to rage",
+		"has a powerful enemy",
+		"specific phobia",
+		"shameful or scandalous history",
+		"secret Crime or misdeed",
+		"possession of forbidden lore",
+		"foolhardy bravery"
+	]
+}

@@ -14,7 +14,7 @@ export const MagicItemResultCard = (props) => (
 			</div>
 		</div>
 	</div>
-	)
+)
 
 export const MagicItemSearchResult = (props) => (
 	<div className="search__results__result" data-index={props.index} onClick={props.handleResultClick}>

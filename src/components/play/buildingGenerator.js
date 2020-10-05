@@ -65,7 +65,7 @@ class BuildingGenerator extends React.Component {
              </div>
             }
         </div>
-    )
+        )
     }
 }
 

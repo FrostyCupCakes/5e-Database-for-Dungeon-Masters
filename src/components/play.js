@@ -31,7 +31,7 @@ class Play extends React.Component {
 			{this.state.activeState === "GENERATORS" && <Generators />}
 				<DiceRoller />
 			</div>
-			)
+		)
 	}
 }
 
